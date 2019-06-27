@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body,ul{
+            margin: 0; 
+            padding: 0;
+        }
+        ul{
+            list-style: none;
+        }
+        .products{
+            width: 800px;
+            background-color: dimgray;
+        }
+        .products::after{
+             content: "";
+             display: block;
+             clear: both;
+        }
+        .products > li{
+            float: left;
+            height: 100px;
+            width: 260px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            background-color: darkcyan;
+        }
+        .products > li:nth-child(3n){
+            margin-right: 0;
+        }
+    </style>
+</head>
+<body>
+    <ul class="products">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</body>
+</html>
